@@ -20,8 +20,10 @@ export class Armario extends Mueble {
     }
 
     //metodo guardar de la clase Armario
-    guardar(objeto, repisa, puerta ) {
-        
+    guardar(obj) {
+        let objeto =obj.objeto;
+        let repisa = obj.repisa; 
+        let puerta = obj.puerta;
         if (repisa > this.repisas || puerta > this.numeroPuertas) {
             console.log("No puedes guardar el objeto en esa repisa o puerta porque no existen");
             return "No puedes guardar el objeto en esa repisa o puerta porque no existen";

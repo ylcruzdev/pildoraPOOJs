@@ -11,7 +11,6 @@ const descripcionMueble1 = mueble1.describir();
 console.log(mueble1.describeMaterial = "Madera"); // usamos el setter para cambiar el material
 console.log(mueble1.describeMaterial); // usamos el getter para obtener el material
 
-
 // Manipulacion del DOM para mostrar el resultado en la pagina
 const app = document.querySelector("#app");
 app.appendChild(document.createElement("h1")).textContent = "Ejmplos de Pildora POO JS";
@@ -69,7 +68,7 @@ app.appendChild(document.createElement("p")).innerHTML = `<strong>armario1.descr
 const guardarObjeto1 = armario1.guardar("laptop", 2, 1);
 app.appendChild(document.createElement("p")).innerHTML = `<strong>armario1.guardar("laptop", 2, 1):</strong> ${guardarObjeto1}`;
 // intentamos guardar en una repisa o puerta que no existen
-const guardarObjeto2 = armario1.guardar("alargador", 6, 4);
+const guardarObjeto2 = armario1.guardar({objeto: "alargador", repisa: 6, puerta: 4});
 app.appendChild(document.createElement("p")).innerHTML = `<strong>armario1.guardar("alargador", 6, 4):</strong> ${guardarObjeto2}`;
 // mostramos las repisas disponibles despues de guardar objetos
 app.appendChild(document.createElement("p")).innerHTML = `<strong>armario1.repisasDisponibles despues de guardar:</strong> ${armario1.repisasDisponibles}`;

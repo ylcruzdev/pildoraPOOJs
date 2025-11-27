@@ -18,6 +18,10 @@ export class Mueble {
         return `Este mueble está hecho de ${this.material} y es de color ${this.color}.`;
     }
 
+    mover(){
+        return `se ha movido el mueble`
+    }
+
     //getter y setter para la propiedad material
     get describeMaterial() {
         return `Mi material es ${this.material}`;
